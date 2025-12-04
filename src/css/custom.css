@@ -1,0 +1,236 @@
+/**
+ * Solarized theme for Docusaurus using Infima CSS variables.
+ * https://ethanschoonover.com/solarized/
+ */
+
+/*
+ * Solarized palette:
+ * base03:  #002b36  base3:  #fdf6e3
+ * base02:  #073642  base2:  #eee8d5
+ * base01:  #586e75  base1:  #93a1a1
+ * base00:  #657b83  base0:  #839496
+ *
+ * yellow:  #b58900  orange: #cb4b16
+ * red:     #dc322f  magenta:#d33682
+ * violet:  #6c71c4  blue:   #268bd2
+ * cyan:    #2aa198  green:  #859900
+ */
+
+/* Solarized Light */
+:root {
+  /* Primary color - Solarized cyan */
+  --ifm-color-primary: #2aa198;
+  --ifm-color-primary-dark: #259187;
+  --ifm-color-primary-darker: #238980;
+  --ifm-color-primary-darkest: #1d7169;
+  --ifm-color-primary-light: #2fb1a9;
+  --ifm-color-primary-lighter: #31b9b0;
+  --ifm-color-primary-lightest: #4ac4bc;
+
+  /* Background colors */
+  --ifm-background-color: #fdf6e3;
+  --ifm-background-surface-color: #eee8d5;
+
+  /* Text colors */
+  --ifm-font-color-base: #657b83;
+  --ifm-font-color-secondary: #586e75;
+  --ifm-heading-color: #073642;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #eee8d5;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 43, 54, 0.1);
+  --ifm-navbar-link-color: #657b83;
+  --ifm-navbar-link-hover-color: #2aa198;
+
+  /* Footer */
+  --ifm-footer-background-color: #eee8d5;
+  --ifm-footer-color: #657b83;
+  --ifm-footer-link-color: #586e75;
+  --ifm-footer-link-hover-color: #2aa198;
+  --ifm-footer-title-color: #073642;
+
+  /* Links */
+  --ifm-link-color: #268bd2;
+  --ifm-link-hover-color: #2aa198;
+
+  /* Code */
+  --ifm-code-font-size: 95%;
+  --ifm-code-background: #eee8d5;
+  --ifm-code-color: #cb4b16;
+  --docusaurus-highlighted-code-line-bg: rgba(238, 232, 213, 0.8);
+
+  /* Cards and borders */
+  --ifm-card-background-color: #eee8d5;
+  --ifm-hr-background-color: #93a1a1;
+
+  /* Hero */
+  --ifm-hero-background-color: #eee8d5;
+  --ifm-hero-text-color: #073642;
+
+  /* Alerts/admonitions */
+  --ifm-color-info: #268bd2;
+  --ifm-color-success: #859900;
+  --ifm-color-warning: #b58900;
+  --ifm-color-danger: #dc322f;
+
+  /* Menu */
+  --ifm-menu-color: #657b83;
+  --ifm-menu-color-active: #2aa198;
+  --ifm-menu-color-background-active: rgba(42, 161, 152, 0.1);
+
+  /* Table of contents */
+  --ifm-toc-link-color: #657b83;
+
+  /* Blockquote */
+  --ifm-blockquote-color: #586e75;
+  --ifm-blockquote-border-color: #93a1a1;
+}
+
+/* Solarized Dark */
+[data-theme='dark'] {
+  /* Primary color - Solarized cyan (slightly lighter for dark mode) */
+  --ifm-color-primary: #2aa198;
+  --ifm-color-primary-dark: #259187;
+  --ifm-color-primary-darker: #238980;
+  --ifm-color-primary-darkest: #1d7169;
+  --ifm-color-primary-light: #4ac4bc;
+  --ifm-color-primary-lighter: #5eccc5;
+  --ifm-color-primary-lightest: #7ed6d0;
+
+  /* Background colors */
+  --ifm-background-color: #002b36;
+  --ifm-background-surface-color: #073642;
+
+  /* Text colors */
+  --ifm-font-color-base: #839496;
+  --ifm-font-color-secondary: #93a1a1;
+  --ifm-heading-color: #eee8d5;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #073642;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --ifm-navbar-link-color: #839496;
+  --ifm-navbar-link-hover-color: #2aa198;
+
+  /* Footer */
+  --ifm-footer-background-color: #073642;
+  --ifm-footer-color: #839496;
+  --ifm-footer-link-color: #93a1a1;
+  --ifm-footer-link-hover-color: #2aa198;
+  --ifm-footer-title-color: #eee8d5;
+
+  /* Links */
+  --ifm-link-color: #268bd2;
+  --ifm-link-hover-color: #2aa198;
+
+  /* Code */
+  --ifm-code-background: #073642;
+  --ifm-code-color: #cb4b16;
+  --docusaurus-highlighted-code-line-bg: rgba(7, 54, 66, 0.8);
+
+  /* Cards and borders */
+  --ifm-card-background-color: #073642;
+  --ifm-hr-background-color: #586e75;
+
+  /* Hero */
+  --ifm-hero-background-color: #073642;
+  --ifm-hero-text-color: #eee8d5;
+
+  /* Menu */
+  --ifm-menu-color: #839496;
+  --ifm-menu-color-active: #2aa198;
+  --ifm-menu-color-background-active: rgba(42, 161, 152, 0.15);
+
+  /* Table of contents */
+  --ifm-toc-link-color: #839496;
+
+  /* Blockquote */
+  --ifm-blockquote-color: #93a1a1;
+  --ifm-blockquote-border-color: #586e75;
+}
+
+/* Additional styling for a clean blog look */
+
+/* Smooth transitions for theme switching */
+html {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Clean navbar styling */
+.navbar {
+  border-bottom: 1px solid var(--ifm-hr-background-color);
+}
+
+.navbar__title {
+  font-weight: 600;
+}
+
+/* Blog post cards */
+article.margin-top--lg {
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Blog post titles */
+.blog-post-title {
+  color: var(--ifm-heading-color);
+}
+
+/* Clean footer */
+.footer {
+  border-top: 1px solid var(--ifm-hr-background-color);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #073642;
+}
+
+/* Hero section for homepage */
+.hero--primary {
+  background-color: var(--ifm-hero-background-color);
+  color: var(--ifm-hero-text-color);
+}
+
+.hero__title {
+  color: var(--ifm-heading-color);
+}
+
+.hero__subtitle {
+  color: var(--ifm-font-color-base);
+}
+
+/* Tag styling */
+.tag {
+  border-color: var(--ifm-color-primary);
+}
+
+/* Reading time and metadata */
+.blog-post-meta {
+  color: var(--ifm-font-color-secondary);
+}
+
+/* Inline code in prose */
+code {
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-width: 4px;
+  font-style: italic;
+}
+
+/* Code blocks */
+pre {
+  border: 1px solid #93a1a1;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] pre {
+  border-color: #586e75;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

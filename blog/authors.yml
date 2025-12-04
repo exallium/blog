@@ -1,0 +1,8 @@
+alex:
+  name: Alex Hart
+  title: Android Developer at Signal
+  url: https://androiddev.social/@exallium
+  image_url: https://github.com/exallium.png
+  socials:
+    github: exallium
+    mastodon: https://androiddev.social/@exallium
