@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "ahart-dev",
+"account_id": "a2d04bb99a3a088cdecd382c21b9fd4f",
   "compatibility_date": "2025-12-04",
   "pages_build_output_dir": "./build"
 }
