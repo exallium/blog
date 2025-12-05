@@ -176,10 +176,6 @@ const config: Config = {
     },
     navbar: {
       title: 'Alex Hart',
-      logo: {
-        alt: 'Alex Hart',
-        src: 'img/logo.svg',
-      },
       items: [
         {to: '/', label: 'Blog', position: 'left'},
         {
