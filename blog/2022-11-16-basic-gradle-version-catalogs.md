@@ -2,6 +2,7 @@
 slug: basic-gradle-version-catalogs
 title: Getting started with Gradle Version Catalogs
 authors: [alex]
+unlisted: true
 ---
 
 Version catalogs are an effective way to help manage your dependencies across multiple modules throughout Gradle based software projects. They allow you to declare all of your dependencies in a single place. You can then reference these dependencies in any `dependencies` block of any `build.gradle` file in your project. This helps ensure that all of your modules are using the same versions. It also ensures that when a version for a dependency changes there is only one place in your code that needs to be updated.
