@@ -178,6 +178,7 @@ const config: Config = {
       title: 'Alex Hart',
       items: [
         {to: '/', label: 'Blog', position: 'left'},
+        {to: '/talks', label: 'Talks', position: 'left'},
         {
           href: 'https://github.com/exallium',
           label: 'GitHub',
